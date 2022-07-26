@@ -1,0 +1,174 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+    /* outline: auto; */
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #00b698;
+}
+
+.row li {
+    list-style: none;
+}
+
+header{
+    background-color: #fff;
+
+    display: flex;
+    
+    align-items: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+
+
+/* PADDING ALL THE HEADER */
+
+header *:not(div){
+    padding: 1.5rem;
+}
+
+header label{
+    position: relative;
+    color: #fff;
+    border-radius: 40px;
+    background-color: #464646;
+    cursor: pointer;
+}
+
+header span{
+    position: relative;
+    z-index: 1000;
+}
+
+#change-c-f:checked ~ .fliper{
+    background-color: #4cbbb9;
+    transition: all .7s ease;
+
+    right: 0;
+    border-radius: 0 40px 40px 0;
+    transform: translateX(100%);
+
+}
+
+.fliper{
+    margin: 0;
+    padding: 0;
+    background-color: #4cbbb9;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    transition: transform .7s, border-radius .7s;
+    
+    height: 100%;
+    width: 50%;
+    z-index: 200;
+    border-radius: 40px 0 0 40px;
+}
+
+.c_f{
+    user-select: none;
+    cursor: pointer;
+}
+
+.c_f *{
+    padding : 0;
+}
+
+.c_f *:not(:last-child){
+    margin-right: 3rem;
+}
+
+#change-c-f{
+    display: none;
+}
+
+header img {
+    height: 6rem;
+    width: auto;
+}
+
+.c_f{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+main{
+    height: 100vh;
+    background-image: url('https://fend-p3-weather-app.herokuapp.com/assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+footer {
+    background-color: #444444;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.7rem;
+    width: 100%;
+    z-index: 100;
+
+}
+
+
+
+/* MARGIN ALL THE FOOTER */
+
+footer *:not(a) {
+    margin: 1.5rem;
+}
+
+footer svg {
+    border-radius: 50%;
+}
+
+.copyrights {
+    color: #fff;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+
+.row,
+.social {
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+}
+
+.social * {
+    margin-left: 0rem;
+    text-decoration: none;
+}
+
+.row{
+    margin: 0;
+}
