@@ -26,9 +26,7 @@ a:visited {
     color: #00b698;
 }
 
-.row li {
-    list-style: none;
-}
+/* HEADER START */
 
 header{
     background-color: #fff;
@@ -115,14 +113,47 @@ header img {
     font-weight: 700;
 }
 
+/* HEADER END */
+
+/* MAIN START */
 
 main{
     height: 100vh;
     background-image: url('https://fend-p3-weather-app.herokuapp.com/assets/images/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    display: flex;
+    align-items: row;
+    justify-content: center;
 }
 
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+
+main > *{
+    background-color: #fff;
+    margin: 1rem;
+    padding: 2rem;
+    height: 20vh;
+    width: 20vw;
+}
+main h1{
+    text-align: center;
+
+}
+main > * > *{
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+/* MAIN END */
+
+/* FOOTER START */
 
 footer {
     background-color: #444444;
@@ -172,3 +203,8 @@ footer svg {
 .row{
     margin: 0;
 }
+.row li {
+    list-style: none;
+}
+
+/* FOOTER END */
